@@ -45,9 +45,16 @@ def game_format(game):
                 f"teams: {away_team} vs {home_team}\n"
                 f"more details soon !!"
                 )
+# get the env variable form the aws system manager
+def get_env_var():
+    ssm_client=boto3.client("ssm",region_name="us-east-1")
+    response=ssm_client.get_parameter(Name="nba-api-key",WithDecryption=True)
+    print(f"{response['Parameter']['Value']}")
+    return response['Parameter']['Value']
+
 def lambda_handler(event, context):
     #Environment variables 
-    API_KEY=os.getenv("NBA_API_KEY")
+    API_KEY=get_env_var()
     sns_client=boto3.client("sns")
     sns_topic=os.getenv("SNS_TOPIC_ARN")
 
@@ -85,4 +92,5 @@ def lambda_handler(event, context):
     
     return {"statusCode": 200, "body": "Data processed and sent to SNS"}   
      
-
+if __name__=="__main__":
+    lambda_handler() 
