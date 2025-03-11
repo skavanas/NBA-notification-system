@@ -4,6 +4,7 @@ terraform.tfvars
 *.tfstate.backup
 tfplan
 *.hcl
-.exe
+.terraform/
+
 
 
