@@ -6,6 +6,8 @@ This project is an **NBA Game Notification System** designed to send real-time n
 
 ## 📖 **Project Overview**  
 ![SAYHI BACKEND CONCEPTTION (1)](https://github.com/user-attachments/assets/de6a06a1-334c-4288-a1a3-073629ee0fb6)
+![image](https://github.com/user-attachments/assets/290e0666-d48a-4aec-841d-208123fbaf15)
+
 
  
 
@@ -47,3 +49,28 @@ This project is an **NBA Game Notification System** designed to send real-time n
 1. **Clone the repository**  
 ```bash
 git clone https://github.com/skavanas/nba-game-notification.git
+```
+2. **Configure AWS environment and Terraform**
+-Set up AWS credentials.
+-Add your environment variables (like API keys) to AWS Systems Manager.
+
+3. **Deploy the infrastructure using Terraform**
+```bash
+terraform init  
+terraform apply 
+```
+4. **Subscribe to Notifications**
+-Subscribe to the SNS topic to start receiving NBA game notifications.
+
+5. **Subscribe to Notifications**
+-Trigger an event in EventBridge and confirm that you receive a notification.
+
+## Contributing
+**Feel free to contribute to this project by:**
+
+-Opening issues
+-Creating pull requests
+-Providing feedback
+
+   
+
