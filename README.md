@@ -5,11 +5,11 @@ This project is an **NBA Game Notification System** designed to send real-time n
 ---
 
 ## 📖 **Project Overview**  
-![SAYHI BACKEND CONCEPTTION (1)](https://github.com/user-attachments/assets/de6a06a1-334c-4288-a1a3-073629ee0fb6)
-![image](https://github.com/user-attachments/assets/290e0666-d48a-4aec-841d-208123fbaf15)
 
-
- 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de6a06a1-334c-4288-a1a3-073629ee0fb6" width="75%" alt="Image 1" style="float:left; margin-right: 10px;">
+  <img src="https://github.com/user-attachments/assets/a755f8e4-9db2-4534-9cd2-bd2151988645" width="25%" alt="Image 2" style="float:left;">
+</p>
 
 ---
 
