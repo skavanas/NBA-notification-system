@@ -3,8 +3,8 @@ __pycache__/
 terraform.tfvars
 *.tfstate
 *.tfstate.backup
-tfplan
 *.hcl
+tfplan
 
 
 
